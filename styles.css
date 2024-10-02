@@ -1,0 +1,101 @@
+/* Reseta margens e paddings de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Bordas comuns */
+  .borda-comum {
+    border: 1px solid rgb(83, 83, 255);
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none; /* Remove sublinhado dos links */
+  }
+  
+  /* Cabeçalho e Seções */
+  header,
+  section,
+  footer {
+    width: 80%;
+    margin: 16px auto; /* Margens superiores/inferiores e centralização */
+    padding: 16px;
+  }
+  
+  /* Navegação */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+  }
+  
+  /* Logotipo */
+  .logo {
+    display: flex;
+    height: 100%;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 241, 255);
+  }
+  
+  /* Listas de navegação */
+  ul {
+    display: flex; /* Flexbox para organizar horizontalmente os itens do menu */
+    height: 100%;
+    list-style: none; /* Remove o estilo de lista padrão */
+  }
+  
+  /* Itens da lista */
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 8px;
+    padding: 0 16px; /* Espaçamento horizontal */
+  }
+  
+  /* Seção */
+  section {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  /* Elementos 'paralelo' */
+  .paralelo {
+    width: 100%;
+    background-color: aliceblue;
+  }
+  
+  /* Rodapé */
+  footer {
+    height: 50px;
+  }
+  
+  /* Ícone do menu */
+  span.material-symbols-outlined {
+    display: none; /* Esconde o ícone do menu por padrão */
+  }
+  
+  /* Media query para telas com largura até 600px */
+  @media screen and (max-width: 600px) {
+    /* Exibe o ícone do menu em telas pequenas */
+    span.material-symbols-outlined {
+      display: block;
+    }
+  
+    /* Ajusta a seção para uma organização em coluna em vez de linha */
+    section {
+      flex-direction: column;
+    }
+  
+    /* Esconde a lista de navegação (menu) em telas pequenas */
+    .nav-list {
+      display: none;
+    }
+  }
+  
